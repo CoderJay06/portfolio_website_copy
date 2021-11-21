@@ -4,10 +4,13 @@
 
 body {
   margin: 0;
-  background: whitesmoke;
   font-family: "Carter One", cursive;
   text-align: center;
   background: #6dabd4;
+}
+
+section {
+  margin-top: 5%;
 }
 
 /***** Header *****/
@@ -100,6 +103,7 @@ body {
   transition: 0.3s;
   /* width: 80%; */
   margin: 0 2em;
+  text-align: center;
 }
 
 .project:hover {
@@ -115,10 +119,22 @@ body {
   margin: 30px 30px 30px 30px;
   transition: 0.8s;
   transition-property: color, transform;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .project-img:hover {
   transform: scale(1.125);
+}
+
+.project-details {
+  margin: 0 10%;
+}
+
+/* Blogs */
+
+/* Contact */
+.contact-details {
+  list-style-type: none;
 }
 
 @media (min-width: 600px) {
@@ -126,5 +142,9 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding: 1.5em 0;
+  }
+
+  .project {
+    margin: 0 20%;
   }
 }
