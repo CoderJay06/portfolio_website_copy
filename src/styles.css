@@ -41,7 +41,7 @@ section {
 }
 
 .link {
-  margin-bottom: 0.5em;
+  margin: 0.5em 0;
   text-decoration: none;
   color: #b0c4de;
   font-size: 1.2rem;
@@ -96,7 +96,7 @@ h2 {
 }
 
 /* Projects */
-.projects {
+.projects-container {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -237,8 +237,20 @@ h2 {
     font-size: 4rem;
   }
 
+  .projects-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100vw;
+    margin: 0 auto;
+  }
+
   .project {
-    margin: 0 20%;
+    margin-bottom: 1em;
+  }
+
+  .project-img {
+    width: 60%;
+    margin: 1em auto;
   }
 
   .contact-title {
