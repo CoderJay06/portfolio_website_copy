@@ -9,10 +9,6 @@ body {
   background: #6dabd4;
 }
 
-section {
-  margin-top: 15%;
-}
-
 /***** Header *****/
 
 #intro-img {
@@ -54,13 +50,17 @@ section {
   cursor: pointer;
 }
 
-/* Sections */
+/**** Sections ****/
+section {
+  margin-top: 15%;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 900;
 }
 
-/* About Me */
+/**** About Me ****/
 .about-me {
   margin-top: 10%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -95,7 +95,7 @@ h2 {
   margin-left: 0.5em;
 }
 
-/* Projects */
+/**** Projects ****/
 .projects-container {
   width: 100vw;
   display: flex;
@@ -148,7 +148,8 @@ h2 {
 .project-github-link a:focus {
   opacity: 0.7;
 }
-/* Blogs */
+
+/**** Blogs ****/
 .blogs-list {
   width: 100vw;
   display: flex;
@@ -186,13 +187,13 @@ h2 {
   color: whitesmoke;
 }
 
-/* Contact */
+/**** Contact ****/
 .contact-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 1.2em;
+  width: 100vw;
   background: #642b73; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -206,10 +207,15 @@ h2 {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.contact-details-container,
+.contact-social-container {
+  display: block;
+  width: 50vw;
+}
+
 .contact-details,
 .contact-social {
   list-style-type: none;
-  width: 50%;
 }
 
 .contact-title {
@@ -219,7 +225,7 @@ h2 {
 }
 
 .contact-item {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .contact-link {
@@ -233,7 +239,34 @@ h2 {
   color: whitesmoke;
 }
 
-/* Desktop */
+/** Mobile <  400px **/
+@media (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #intro-img {
+    height: 25vh;
+  }
+
+  .blog {
+    width: 100%;
+  }
+
+  .contact-container {
+    flex-flow: column;
+  }
+
+  .contact-details-container,
+  .contact-social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/** Desktop **/
 @media (min-width: 600px) {
   #intro-img {
     height: 80vh;
@@ -268,12 +301,17 @@ h2 {
   .blogs-list {
     display: grid;
     grid-template-columns: auto auto auto auto;
+    /* grid-gap: 1em; */
     place-items: center;
     margin: 0 auto;
   }
 
   .blog-img {
     width: 100%;
+  }
+
+  .contact-container {
+    padding-bottom: 1.2em;
   }
 
   .contact-title {
