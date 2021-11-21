@@ -25,71 +25,114 @@
     </header>
 
     <section class="about-me">
-      <img id="about-me-img" alt="" />
-      <h2 class="about-me-heading">About Me</h2>
-      <p class="about-me-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
-      </p>
+      <div class="about-me-img-container">
+        <img
+          class="about-me-img"
+          src="./images/about_me.jpg"
+          alt="Photo of Jay"
+        />
+      </div>
+
+      <div class="about-me-info-container">
+        <h2 class="about-me-heading">About Me</h2>
+        <p class="about-me-body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
     </section>
 
     <section class="projects">
       <h2 class="projects-heading">Portfolio Projects</h2>
 
       <div class="project">
-        <h3 class="project-title"></h3>
         <a class="project-link" href="#">
           <img
             class="project-img"
             src="./images/stocks_chaser_project.jpeg"
-            alt=""
+            alt="Stocks Chaser logo"
           />
         </a>
-        <p class="project-details"></p>
+        <h3 class="project-title">Stocks Chaser</h3>
+        <p class="project-details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <a class="project-github-link" href="#">Github</a>
       </div>
 
       <div class="project">
-        <h3 class="project-title"></h3>
         <a class="project-link" href="#">
           <img
             class="project-img"
             src="./images/dev_library_project.png"
-            alt=""
+            alt="Dev Library logo"
           />
         </a>
-        <p class="project-details"></p>
+        <h3 class="project-title">Dev Library</h3>
+        <p class="project-details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <a class="project-github-link" href="#">Github</a>
       </div>
 
       <div class="project">
-        <h3 class="project-title"></h3>
         <a class="project-link" href="#">
           <img
             class="project-img"
             src="./images/connections_project.png"
-            alt=""
+            alt="Connections screentshot"
           />
         </a>
-        <p class="project-details"></p>
+        <h3 class="project-title">Connections</h3>
+        <p class="project-details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <a class="project-github-link" href="#">Github</a>
       </div>
 
       <div class="project">
-        <h3 class="project-title"></h3>
         <a class="project-link" href="#">
           <img
             class="project-img"
             src="./images/guard-reports-project.png"
-            alt=""
+            alt="Guard Reports logo"
           />
         </a>
-        <p class="project-details"></p>
+        <h3 class="project-title">Guard Reports</h3>
+        <p class="project-details">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <a class="project-github-link" href="#">Github</a>
       </div>
     </section>
 
     <section class="blogs">
       <h2 class="blogs-heading">Recent Blogs</h2>
-      <div class="blog">
+      <div
+        id="retainable-rss-embed"
+        data-rss="https://medium.com/feed/@jay-cruz"
+        data-maxcols="3"
+        data-layout="slider"
+        data-poststyle="external"
+        data-readmore="Read the rest"
+        data-buttonclass="btn btn-primary"
+        data-offset="-100"
+      ></div>
+      <!-- <div class="blog">
         <a class="blog-link" href="#">
           <img class="blog-img" alt="" />
         </a>
@@ -111,7 +154,7 @@
         </a>
         <h3 class="blog-title"></h3>
         <p class="blog-summary"></p>
-      </div>
+      </div> -->
       <p class="blogs-medium-link">More blogs on <a href="#">Medium</a></p>
       <p class="blogs-dev-link">More blogs on <a href="#">Dev.to</a></p>
     </section>
@@ -132,6 +175,7 @@
     </section>
 
     <footer></footer>
-    <script src="./src/index.js"></script>
+    <script src="https://www.retainable.io/assets/retainable/rss-embed/retainable-rss-embed.js"></script>
+    <!-- <script src="./src/index.js"></script> -->
   </body>
 </html>

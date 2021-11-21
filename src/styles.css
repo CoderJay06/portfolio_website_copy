@@ -6,9 +6,11 @@ body {
   margin: 0;
   background: whitesmoke;
   font-family: "Carter One", cursive;
+  text-align: center;
+  background: #6dabd4;
 }
 
-/* Header */
+/***** Header *****/
 
 #intro-img {
   display: block;
@@ -51,13 +53,72 @@ body {
 
 /* About Me */
 .about-me {
-  /* margin-top: 20%; */
+  margin-top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.about-me:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-me-img-container {
+  width: 50%;
+  height: 100%;
+  border: 3px solid #ccc;
+  background: #eee;
+  margin: auto;
+  padding: 15px 10px;
+}
+
+.about-me-img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-me-info-container {
+  width: 50%;
+  margin-left: 0.5em;
 }
 
 /* Projects */
+.projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  margin-top: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* width: 80%; */
+  margin: 0 2em;
+}
+
+.project:hover {
+  opacity: 0.8;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 .project-img {
   width: 250px;
   height: 250px;
+  /* height: auto; */
+  /* color: #fff; */
+  margin: 30px 30px 30px 30px;
+  transition: 0.8s;
+  transition-property: color, transform;
+}
+
+.project-img:hover {
+  transform: scale(1.125);
 }
 
 @media (min-width: 600px) {
