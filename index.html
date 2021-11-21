@@ -12,6 +12,10 @@
       href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -62,7 +66,9 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <a class="project-github-link" href="#">Github</a>
+        <div class="project-github-link">
+          <a href="#">Github</a>
+        </div>
       </div>
 
       <div class="project">
@@ -80,7 +86,9 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <a class="project-github-link" href="#">Github</a>
+        <div class="project-github-link">
+          <a href="#">Github</a>
+        </div>
       </div>
 
       <div class="project">
@@ -98,7 +106,9 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <a class="project-github-link" href="#">Github</a>
+        <div class="project-github-link">
+          <a href="#">Github</a>
+        </div>
       </div>
 
       <div class="project">
@@ -116,30 +126,56 @@
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <a class="project-github-link" href="#">Github</a>
+        <div class="project-github-link">
+          <a href="#">Github</a>
+        </div>
       </div>
     </section>
+
     <section class="blogs">
       <h2 class="blogs-header">Recent Blogs</h2>
-      <div class="blogs-list">
-        <p class="blogs-medium-link">More blogs on <a href="#">Medium</a></p>
-        <p class="blogs-dev-link">More blogs on <a href="#">Dev.to</a></p>
+      <div class="blogs-list"></div>
+      <div class="blogs-links">
+        <p>More blogs on <a href="#">Medium</a> and <a href="#">Dev.to</a></p>
       </div>
     </section>
+
     <footer>
       <section class="contact">
-        <h2 class="contact-heading">Contact Me:</h2>
-        <ul class="contact-details">
-          <li class="contact-email">
-            Email: <a href="mailto:jjcru06@gmail.com">jjcru06@gmail.com</a>
-          </li>
-          <li class="contact-phone">
-            Phone: 631-578-6185
-          </li>
-          <li class="contact-linkedin">
-            <a href="https://www.linkedin.com/in/jason-j-cruz/">linkedin</a>
-          </li>
-        </ul>
+        <h2 class="contact-heading">Contact Me</h2>
+        <div class="contact-container">
+          <ul class="contact-details">
+            <h4 class="contact-title">Phone & email</h4>
+            <li class="contact-item">
+              <a class="contact-link" href="tel:1-631-578-6185">
+                <span>&#128222;</span> 1-631-578-6185
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-link" href="mailto:jjcru06@gmail.com"
+                ><span>&#9993;</span> jjcru06@gmail.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="contact-social">
+            <h4 class="contact-title">Social media</h4>
+            <li class="contact-item">
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/jason-j-cruz/"
+                ><i style="font-size: 24px;" class="fa">&#xf08c;</i> Linkedin</a
+              >
+            </li>
+            <li class="contact-item">
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/jason-j-cruz/"
+                ><i style="font-size: 24px;" class="fa">&#xf09b;</i> Github</a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </footer>
     <script src="./src/index.js"></script>
