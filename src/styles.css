@@ -8,6 +8,8 @@ body {
   font-family: "Carter One", cursive;
 }
 
+/* Header */
+
 #intro-img {
   display: block;
   width: 100vw;
@@ -47,8 +49,15 @@ body {
   cursor: pointer;
 }
 
+/* About Me */
 .about-me {
   /* margin-top: 20%; */
+}
+
+/* Projects */
+.project-img {
+  width: 250px;
+  height: 250px;
 }
 
 @media (min-width: 600px) {
