@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  background: whitesmoke;
+  font-family: "Carter One", cursive;
+}
+
+#intro-img {
+  display: block;
+  width: 100vw;
+  height: 50vh;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3498db,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3498db,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  width: 100%;
+}
+
+.link {
+  margin-bottom: 0.5em;
+  text-decoration: none;
+  color: #b0c4de;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.link:hover,
+.link:focus {
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  #navbar {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.5em 0;
+  }
+}
