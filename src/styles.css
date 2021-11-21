@@ -140,6 +140,14 @@ h2 {
   margin-bottom: 1em;
 }
 
+.project-github-link a {
+  text-decoration: none;
+}
+
+.project-github-link a:hover,
+.project-github-link a:focus {
+  opacity: 0.7;
+}
 /* Blogs */
 .blogs-list {
   width: 100vw;
@@ -174,6 +182,17 @@ h2 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  background: #642b73; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c6426e,
+    #642b73
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .contact-details,
@@ -185,6 +204,7 @@ h2 {
 .contact-title {
   text-decoration: underline;
   font-size: 1.5rem;
+  margin-bottom: 1em;
 }
 
 .contact-item {
