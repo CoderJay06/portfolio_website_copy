@@ -106,6 +106,16 @@ p {
   text-align: center;
 }
 
+.about-me-link {
+  color: #642b73;
+  text-decoration: none;
+}
+
+.about-me-link:hover,
+.about-me-link:focus {
+  color: whitesmoke;
+}
+
 .about-me-more-btn {
   background: #642b73;
   color: whitesmoke;
