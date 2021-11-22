@@ -1,5 +1,3 @@
-// fetch blogs: "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jay-cruz"
-
 // grab .blogs from the dom
 const blogsList = document.querySelector(".blogs-list");
 const rssFeedUrl =
