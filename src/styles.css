@@ -94,15 +94,33 @@ p {
   padding: 15px 10px;
 }
 
+
 .about-me-img {
   width: 100%;
-  height: 100%;
+  height: 300px;
 }
 
 .about-me-info-container {
-  width: 50%;
+  width: 100%;
   margin: 1.5em;
   text-align: center;
+}
+
+.about-me-more-btn {
+    background: #642b73;
+    color: whitesmoke;
+}
+
+.about-me-more-btn:hover {
+    background: whitesmoke;
+    color: #642b73;
+    opacity: 0.6;
+}
+
+.about-me-more-img {
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /**** Skills ****/
@@ -310,6 +328,11 @@ p {
     height: 25vh;
   }
 
+  .about-me-img {
+    width: 100%;
+    height: 100%;
+  }
+
   .skills-technical-list-container {
     flex-flow: column wrap;
   }
@@ -350,6 +373,11 @@ p {
   p {
     font-size: 1.125rem;
   }
+
+  .about-me-img {
+      width: 100%;
+      height: 100%;
+   }
 
   .about-me-info-container {
     width: 50%;

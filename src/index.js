@@ -1,3 +1,29 @@
+const moreAboutMeBtn = document.getElementById("about-me-more-btn");
+const moreAboutMeInfo = document.querySelector(".about-me-more-info");
+let aboutMeShown = true;
+
+function createMoreAboutMe() {
+    return `
+        <p>Some of my other interests I'm also passionate about include Investing, stocks, cryptocurrency, and boxing. I have had experience competing as an amateur boxer since my teenage years. Although I do not compete anymore I now bring the same mental determination and humbleness that boxing demanded of me into the world of Software Engineering.</p>
+        <img class="about-me-more-img"  src="./images/boxing.jpg" alt="Boxing" />
+    `
+}
+
+function setMoreAboutMe(e) {
+    if (aboutMeShown) {
+        moreAboutMeInfo.innerHTML = createMoreAboutMe();
+        aboutMeShown = true;
+    } else {
+        moreAboutMeInfo.innerHTML = "";
+        aboutMeShown = false;
+    }
+
+    // set aboutMeShown to be opposite of current state
+    aboutMeShown = !aboutMeShown;
+}
+
+moreAboutMeBtn.addEventListener("mouseover", setMoreAboutMe);
+
 // grab .blogs from the dom
 const blogsList = document.querySelector(".blogs-list");
 const rssFeedUrl =
