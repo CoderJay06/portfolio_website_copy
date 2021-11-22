@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Carter One", cursive;
@@ -99,6 +103,50 @@ p {
   width: 50%;
   margin: 1.5em;
   text-align: center;
+}
+
+/**** Skills ****/
+.skills {
+  width: 100%;
+  padding: 1em;
+  margin-top: 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.skills-technical,
+.skills-soft {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 1em;
+}
+
+.skills-soft-header {
+  margin-bottom: 3em;
+}
+
+.skills-technical-list-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-technical-list {
+  flex: 1;
+}
+
+.skills-technical-list,
+.skills-soft-list {
+  text-align: center;
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  margin-right: 2em;
+}
+
+.skills-technical-list li,
+.skills-soft-list li {
+  /* margin-right: auto;
+  margin-left: auto; */
+  margin-bottom: 1em;
 }
 
 /**** Projects ****/
@@ -262,6 +310,10 @@ p {
     height: 25vh;
   }
 
+  .skills-technical-list-container {
+    flex-flow: column wrap;
+  }
+
   .blog {
     width: 100%;
   }
@@ -307,6 +359,10 @@ p {
 
   .about-me-body {
     font-size: 1.4rem;
+  }
+
+  .skills {
+    font-size: 1.2rem;
   }
 
   .projects-container {
