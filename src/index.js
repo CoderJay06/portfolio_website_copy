@@ -3,23 +3,23 @@ const moreAboutMeInfo = document.querySelector(".about-me-more-info");
 let aboutMeShown = true;
 
 function createMoreAboutMe() {
-    return `
+  return `
         <p>Some of my other interests I'm also passionate about include Investing, stocks, cryptocurrency, and boxing. I have had experience competing as an amateur boxer since my teenage years. Although I do not compete anymore I now bring the same mental determination and humbleness that boxing demanded of me into the world of Software Engineering.</p>
         <img class="about-me-more-img"  src="./images/boxing.jpg" alt="Boxing" />
-    `
+    `;
 }
 
 function setMoreAboutMe(e) {
-    if (aboutMeShown) {
-        moreAboutMeInfo.innerHTML = createMoreAboutMe();
-        aboutMeShown = true;
-    } else {
-        moreAboutMeInfo.innerHTML = "";
-        aboutMeShown = false;
-    }
+  if (aboutMeShown) {
+    moreAboutMeInfo.innerHTML = createMoreAboutMe();
+    aboutMeShown = true;
+  } else {
+    moreAboutMeInfo.innerHTML = "";
+    aboutMeShown = false;
+  }
 
-    // set aboutMeShown to be opposite of current state
-    aboutMeShown = !aboutMeShown;
+  // set aboutMeShown to be opposite of current state
+  aboutMeShown = !aboutMeShown;
 }
 
 moreAboutMeBtn.addEventListener("mouseover", setMoreAboutMe);
@@ -28,7 +28,7 @@ moreAboutMeBtn.addEventListener("mouseover", setMoreAboutMe);
 const blogsList = document.querySelector(".blogs-list");
 const rssFeedUrl =
   "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@jay-cruz";
-console.log(blogsList);
+
 async function fetchBlogs() {
   const request = await fetch(rssFeedUrl);
   const json = request.json();
