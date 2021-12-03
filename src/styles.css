@@ -41,6 +41,34 @@ body {
   width: 100%;
 }
 
+.header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 4em;
+}
+
+.portfolio-heading {
+  padding: 6.5em 0;
+  margin: 0 auto;
+}
+
+.portfolio-main-heading {
+  color: #000;
+  text-shadow: 1px 0px 1px #c6426e, 0px 1px 1px #eee, 1px 1px 1px #c6426e,
+    1px 1px 1px #642b73;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  margin: 0 auto;
+}
+
+.portfolio-sub-heading {
+  margin: 0 auto;
+  /* text-shadow: 1px 0px 0px #c6426e, 0px 1px 0px #eee, 0px 1px 0px #c6426e,
+    1px 0px 1px #642b73; */
+  opacity: 0.6;
+  /* text-decoration: underline; */
+}
+
 .link {
   margin: 0.5em 0;
   text-decoration: none;
@@ -407,6 +435,10 @@ p {
     height: 25vh;
   }
 
+  .portfolio-main-heading {
+    font-size: 2rem;
+  }
+
   .about-me-img {
     width: 100%;
     height: 100%;
@@ -455,6 +487,18 @@ p {
     flex-direction: row;
     justify-content: space-around;
     padding: 2em 0;
+  }
+
+  .portfolio-heading {
+    padding: 8em 0;
+  }
+
+  .portfolio-main-heading {
+    font-size: 4rem;
+  }
+
+  .portfolio-sub-heading {
+    font-size: 1.5rem;
   }
 
   h2 {
