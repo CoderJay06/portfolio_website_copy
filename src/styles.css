@@ -284,7 +284,7 @@ p {
 
 .project-github-link a {
   text-decoration: none;
-  color: #2c3e50;
+  color: #243241;
 }
 
 .project-github-link a:hover,
@@ -349,7 +349,7 @@ p {
     #c6426e,
     #642b73
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  padding-bottom: 1em;
+  padding: 1em 0;
 }
 
 .contact-details-container,
@@ -378,7 +378,7 @@ p {
 
 .contact-link {
   text-decoration: none;
-  color: #2c3e50;
+  color: #243241;
 }
 
 .contact-link:hover,
@@ -475,6 +475,10 @@ p {
   .blog {
     width: 100vw;
   }
+
+  .contact-container {
+    padding: 1.5em 0;
+  }
 }
 
 /** Desktop and Tablets **/
@@ -563,7 +567,7 @@ p {
   }
 
   .contact-container {
-    padding-bottom: 1.2em;
+    padding: 2.5em 0;
   }
 
   .contact-title {
@@ -578,5 +582,9 @@ p {
 @media (min-width: 1200px) {
   #intro-img {
     height: 80vh;
+  }
+
+  .contact-container {
+    padding: 3.5em 0;
   }
 }
