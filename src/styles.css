@@ -125,8 +125,8 @@ p {
 
 .about-me-img {
   width: 100%;
-  /* height: 300px; */
   height: 100%;
+  background-size: cover;
 }
 
 .about-me-info-container {
@@ -439,11 +439,6 @@ p {
     font-size: 2rem;
   }
 
-  .about-me-img {
-    width: 100%;
-    height: 100%;
-  }
-
   .skills-technical-list-container {
     flex-flow: column wrap;
   }
@@ -513,16 +508,11 @@ p {
     font-size: 1.125rem;
   }
 
-  .about-me-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .about-me-info-container {
+  /* .about-me-info-container {
     width: 50%;
     margin: 2em;
     text-align: center;
-  }
+  } */
 
   .about-me-body {
     font-size: 1.4rem;
@@ -580,11 +570,17 @@ p {
 }
 
 @media (min-width: 1200px) {
-  #intro-img {
-    height: 80vh;
-  }
-
   .contact-container {
     padding: 3.5em 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  #intro-img {
+    height: 70vh;
+  }
+
+  .about-me-body {
+    margin: 2em;
   }
 }
